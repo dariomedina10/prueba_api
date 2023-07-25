@@ -25,19 +25,19 @@ namespace prueba_api.Controllers
             }
         }
 
-        //[HttpGet]
-        ////hecho por dario medina
-        //public Cargos Get(int id)
-        //{
+        [HttpGet]
+        //hecho por dario medina
+        public empleado Get(int id)
+        {
 
-        //    using (Meru_LinkEntities db = new Meru_LinkEntities())
-        //    {
-        //        return db.Cargos.FirstOrDefault(x => x.Departamento_id == id);
+            using (AsistenciaEntities db = new AsistenciaEntities())
+            {
+                return db.empleados.FirstOrDefault(x => x.id_empl == id);
 
-        //    }
+            }
 
 
-        //}
+        }
 
         //[HttpPost]
 
